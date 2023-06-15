@@ -83,6 +83,11 @@
     opacity: 100% !important;
 
 }
+.video-show{
+    width: 100%;
+    max-width: 100%;
+
+}
 .video-container{
     background-color: transparent;
     z-index: -1;
@@ -222,7 +227,10 @@
         position: absolute;
 
     }
-
+    .new-video-container{
+        display: block;
+        position: relative;
+    }
     
     .header-carousel .owl-carousel-item img {
         position: absolute;
