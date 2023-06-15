@@ -1,9 +1,9 @@
-/********** Template CSS **********/
+/********** CSS **********/
 :root {
-    --primary: #65B530;
+    --primary: #ff0000;
     --secondary: #9B9B9B;
     --light: #F5F5F5;
-    --dark: #161616;
+    --dark: #9a9b98;
 }
 
 .fw-medium {
@@ -50,6 +50,20 @@
 
 .btn.btn-primary {
     color: #FFFFFF;
+    background-color: #e14a4a;
+    border-color: transparent;
+}
+.btn.btn-light:hover{
+    scale: 1.05;
+    background-color: transparent;
+    border-color: #e14a4a;
+    color: #FFFFFF;
+}
+.btn.btn-primary:hover{
+    scale: 1.05;
+    background-color: #7d0a0a;
+    border: none;
+    color: #FFFFFF;
 }
 
 .btn-square {
@@ -60,13 +74,35 @@
 .btn-sm-square {
     width: 32px;
     height: 32px;
+    background-color: #fe6241 !important;
+}
+.video-fluid{
+    width: 100%;
+    max-width: 100%;
+    z-index: -1 !important;
+    opacity: 100% !important;
+
+}
+.video-container{
+    background-color: transparent;
+    z-index: -1;
+    position: absolute;
 }
 
 .btn-lg-square {
     width: 48px;
     height: 48px;
 }
+.text-end, .text-start{
+    color: #FFFFFF !important;
+}
+.text-area{
+    color: black;
+}
+.bg-primary,.text-usage{
+    color: #fe6241 !important;
 
+}
 .btn-square,
 .btn-sm-square,
 .btn-lg-square {
@@ -75,6 +111,13 @@
     align-items: center;
     justify-content: center;
     font-weight: normal;
+
+}
+.container-fluid{
+    background-color:#9a9b98;
+}
+.font-awesome{
+    color:#fe6241 ;
 }
 
 /*** Navbar ***/
@@ -149,7 +192,7 @@
 .header-carousel .carousel-inner {
     position: absolute;
     width: 100%;
-    height: 100%;
+   height: 100%;
     top: 0;
     left: 0;
     display: flex;
@@ -161,6 +204,14 @@
     .header-carousel .owl-carousel-item {
         position: relative;
         min-height: 500px;
+    }
+    .video-fluid{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+
     }
     
     .header-carousel .owl-carousel-item img {
@@ -180,6 +231,9 @@
         font-size: 30px;
         font-weight: 600;
     }
+}
+.owl-carousel{
+    position: relative !important;
 }
 
 .header-carousel .owl-nav {
